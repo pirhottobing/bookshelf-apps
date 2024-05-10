@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf Apps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="head-logo">Bookshelf Apps</h1>
+  </header>
+
+  <main>
+    <section id="input">
+      <h2>Masukkan Buku Baru</h2>
+      <form id="inputBook">
+        <label for="inputTitle">Judul</label>
+        <input id="inputTitle" type="text" required>
+
+        <label for="inputAuthor">Penulis</label>
+        <input id="inputAuthor" type="text" required>
+
+        <label for="inputYear">Tahun</label>
+        <input id="inputYear" type="number" required>
+
+        <button id="submit" type="submit">Masukkan Buku ke Rak</button>
+      </form>
+    </section>
+
+    <div id="shelf">
+      <section class="book-shelf">
+        <h2>Belum selesai dibaca</h2>
+        <div id="incompleteBook"></div>
+      </section>
+  
+      <section class="book-shelf">
+        <h2>Sudah selesai dibaca</h2>
+        <div id="completeBook"></div>
+      </section> 
+    </div>   
+  </main>
+  
+  <script src="main.js"></script>
+</body>
+</html>
